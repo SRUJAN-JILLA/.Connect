@@ -1,0 +1,304 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url({% static 'img/phone2.png' %}) top center;
+  background-size: cover;
+  position: relative;
+}
+ @media (min-width: 767px) {
+  #hero{
+    background-attachment: fixed;
+    background: url({% static 'img/plain.png' %}) top center;
+	  background-size: cover;
+    position:relative;
+    width: 100%;
+    height:400px;
+     }
+ }
+
+  @media (min-width: 1000px) {
+  #hero{
+    background-attachment: fixed;
+    background:url({% static 'img/plain.png' %}) top center;
+    background-size: cover;
+    position:relative;
+     width: 100%;
+     height:600px;
+     }
+ }
+
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+#hero .btn-get-started:hover {
+  background: #2dc997;
+  border: 2px solid #2dc997;
+}
+
+
+
+
+/*------BUY AND SELL-----------*/
+.Buy{
+font-family: 'Cookie', cursive;
+font-size: 65vw;
+color:#ffffff;
+border: 0;
+background-color: transparent;
+cursor: pointer;
+z-index: 9999;
+padding-left: 20px;
+}
+.Sell{
+font-family: 'Cookie', cursive;
+font-size: 65vw;
+border: 0;
+color:#0d0d0d;
+background-color: transparent;
+cursor: pointer;
+z-index: 9999;
+padding-left: 20px;
+}
+.Buy:hover{
+ transform: scale(1.15);
+}
+.Sell:hover{
+ transform: scale(1.15);
+}
+
+@media(min-width: 768px){
+
+.Sell{
+  font-size: 28vw;
+  padding-left: 0px;
+}
+.Buy{
+  font-size: 28vw;
+  padding-right: 0px;
+}
+.containers{
+display: grid;
+grid-auto-columns: 1fr 1fr;
+grid-template-rows: 450px;
+}
+}
+
+
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Header
+--------------------------------*/
+.section-header .section-title {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.section-header .section-description {
+  text-align: center;
+  padding-bottom: 40px;
+  color: #999;
+}
+
+
+
+
+
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+#hero .btn-get-started:hover {
+  background: #2dc997;
+  border: 2px solid #2dc997;
+}
+          .col-md-3
+          {
+          display: inline-block;
+          margin-left:-4px;
+          }
+
+          .carousel-indicators .active {
+          background-color: blue;
+            }
+
+          .col-md-3 img{
+
+          width: 270px;
+          height: 200px;
+          }
+
+          body .carousel-indicator li{
+          background-color: blue;
+          }
+
+          body .carousel-indicators{
+          bottom: -25px;
+          }
+
+          body .carousel-control-prev-icon,
+          body .carousel-control-next-icon{
+          background-color: blue;
+          }
+
+          .carousel-control-prev,
+          .carousel-control-next{
+          top: auto;
+          bottom: auto;
+          padding-top: 210px;
+          width: 2%;
+          }
+           body .no-padding{
+           padding-left: 0,
+           padding-right: 0;
+           }
+
+           .backimg1{
+            background-image: url({% static 'img/812.jpg' %});
+            background-size: contain;
+            width: 100%;
+            height:100vh;
+            background-repeat: repeat-x;
+
+            }
+            .imgabout{
+            margin-top:-190px;
+            margin-left:-380px;
+              height: 350px;
+            }
+            .imgabout1{
+              margin-top: -190px;
+              margin-right:-350px;
+              height: 300px;
+            }
+            .container{
+            background-image: url({% static 'img/sky1.jpg' %});
+            background-size: cover;
+          }
+        .btn{
+        position: relative;
+        background-color: #33b5e5;
+        color: white;
+        font-size: 14px;
+        font-family: "montserrat";
+        text-decoration: none;
+
+        border: 2px solid #ff7675;
+        padding: 14px 60px;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 1s all ease;
+      }
+      .btn::before{
+        background: #ff7675;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+        transition: all 0.6s ease;
+      }
+
+      .btn3::before{
+        width: 100%;
+        height: 0%;
+        transform: translate(-50%,-50%) rotate(45deg);
+      }
+      .btn3:hover::before{
+        height: 380%;
+      }
+           @media (max-width: 768px) {
+          .imgabout{
+          height:0px;
+        }
+         .imgabout1{
+          height:0px;
+        }
+    }
+
+
+ {% endblock %}
+
+
+
+{% block body %}
+
+{% load static %}
+       <div class=products style="font-family: Advent Pro;text-align: center;font-size: 40px;background: black;color: white;margin-right: 0;padding-top: 1px;padding-bottom: 1px;border-radius: 5px">.Connect</div>
+
+{% block main %}
+ <section id="hero">
+<div class="containers">
+<div class="row">
+	<div class="col-lg col-md-6"><a href="{% url 'detail' %}"><button class='Buy'>Buy</button></a></div>
+	<div class="col-lg col-md-6"><a href="{% url 'create' %}"><button class='Sell'>Sell</button></a></div>
+  </div>
+</div>
+  </section><!-- #hero -->
+{% endblock %}
+ {% block about %}
+<!-- ABOUTPANEL-->
+<div class="overflow-hidden p-md-5 m-md-3 text-center about">
+ <div class="about">
+        <h2 style="margin-top:-10px;text-align: center;font-size: 3.55em;font-family: Advent Pro; font-weight: 600;letter-spacing: 2px;color: : #fff;">Wanna know how to use this web app</h1>
+      <img src="{% static 'img/img22.png' %}" class="imgabout">
+     <iframe style="border-radius:20px;" width="560" height="315" src="https://www.youtube.com/embed/guPkwr-gz7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <img src="{% static 'img/img24.png' %}" class="imgabout1">
+
+ </div>
+
+
+</div>
+ {% endblock %}
+<br><br><br>
+</div>
+
+
+</div>
+</div>
+
+ {% endblock %}
+
+</div>
